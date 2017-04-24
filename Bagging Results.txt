@@ -1,0 +1,162 @@
+Descion Trees
+*****************************************************
+features = 2
+slit = 2
+bags = 1
+Increase the mSamples from 100 to 10000 by 100:
+1st:
+	Training Score  0.180459339699
+	Testing Score  0.179928852275
+
+Last:
+	-Training Score  0.184578418523
+	-Testing Score  0.179335954565
+***********************************************************	
+features = 2
+slit = 2
+bags = 1
+mSamples = 15600
+	-Training Score  0.182643699682
+	-Testing Score  0.180334519129
+
+Testing score went down initilally then went up but around .18
+Training score was pivioting around .18
+***********************************************************
+feature = 2
+split = 2
+mSamples = 15600
+bags range from 10 to 1000 by 100
+
+1st:
+	Training Score  0.463115521438
+	Testing Score  0.149441427947
+
+I was slowing down bags#  > 100
+
+bag = 140
+Training Score  0.566810210323
+Testing Score  0.156088123323
+
+More Bags we use the better score we get
+***************************************************************
+feature = 2
+bags = 10
+mSamples = 15600
+split range from 10 to 1000 by 100
+
+1st:
+	Training Score  0.463115521438
+	Testing Score  0.16579227214
+
+split# = 90
+	Training Score  0.4631
+	Testing Score  0.1700
+	
+More splits meant better testing accuracy
+***********************************************************
+splits = 10
+bags = 5
+mSamples = 15600
+feature range from 2 to 4
+
+1st:
+	Training Score  0.39121887287
+	Testing Score  0.154745384572
+
+By Adding 2 new feature of terrain type and close to water. training acc went up but other 
+went down but looks like upward climb
+
+	Training Score  0.449915746115
+	Testing Score  0.14672597241
+**************************************************************
+Really basic Test:
+bags = 1
+samples = 15600
+splits = 10
+feature = 4
+
+Training Score  0.350496161767
+Testing Score  0.130468359558
+
+**************************************************************
+
+**********************^^^^^^^^^^^^^NN^^^^^^^^^^^^*************
+USES really basic Test as starting comparision
+************************1*************************************
+Tree_num/Bags:  1
+Splits:  10
+max feature:  4
+max sample:  15600
+
+NN  1
+Training Score  0.334456718467
+Testing Score  0.120514372635
+
+NN  2
+Training Score  0.282344130313
+Testing Score  0.135773779266
+
+NN  3
+Training Score  0.254477937964
+Testing Score  0.139674246895
+
+NN  4
+Training Score  0.240342008363
+Testing Score  0.138176080601
+
+NN  5
+Training Score  0.234662672408
+Testing Score  0.142170307786
+
+NN  6
+Training Score  0.229607439306
+Testing Score  0.145540149696
+
+NN  7
+Training Score  0.226237283904
+Testing Score  0.14800516515
+
+NN  8
+Training Score  0.225488360482
+Testing Score  0.152935819305
+
+NN  9
+Training Score  0.225269924484
+Testing Score  0.15624374563
+
+**NN is bring down the training data accuracy but increasing the testing accuracy
+
+*****************************************************
+Big Run *Due to computer not being able to handle it*
+
+bag = 50
+mSample = 15600
+splits = 100
+mFeatures = 4
+
+NN = 5
+	Training Score of NN  0.322598764276
+	Testing Score of NN 0.183578424785
+DT
+	Training Score of DT  0.57192785371
+	Testing Score of DT 0.158583810019
+
+
+
+
+**************************************
+Tree_num/Bags:  25
+Splits:  10
+max feature:  4
+max sample:  15600
+Training Score Chicago  0.551769331586
+Testing Score Chicago  0.158209219755
+
+Training Score New York  0.481163593407
+Testing Score New York  0.162430184891'
+
+Training Score Pheonix  0.254558850617
+Testing Score Pheonix  0.124145617147
+	
+
+
